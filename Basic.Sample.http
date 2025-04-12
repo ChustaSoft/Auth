@@ -1,0 +1,6 @@
+@Basic.Sample = https://localhost:7239
+
+GET {{Basic.Sample}}/weatherforecast/
+Accept: application/json
+Authorization: Basic dGVzdDpwYXNz
+###

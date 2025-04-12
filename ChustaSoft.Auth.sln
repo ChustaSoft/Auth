@@ -12,6 +12,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChustaSoft.Auth.Basic", "NuGet\ChustaSoft.Auth.Basic\ChustaSoft.Auth.Basic.csproj", "{97CBC58B-25C6-421D-8E71-F5FC5C5BDD66}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic", "Basic", "{FEFE06CE-40AE-4CF7-B71E-C72B06D2EF50}"
+	ProjectSection(SolutionItems) = preProject
+		Basic.Sample.http = Basic.Sample.http
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChustaSoft.Auth.Basic.Sample.WebAPI", "Examples\Basic\ChustaSoft.Auth.Basic.Sample.WebAPI.csproj", "{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E}"
 EndProject
