@@ -15,8 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic", "Basic", "{FEFE06CE
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChustaSoft.Auth.Basic.Sample.WebAPI", "Examples\Basic\ChustaSoft.Auth.Basic.Sample.WebAPI.csproj", "{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Documentation", "5. Documentation", "{F7119101-169A-4C37-ADCA-7BF6AE16A3CF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Others", "5. Others", "{F7119101-169A-4C37-ADCA-7BF6AE16A3CF}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
