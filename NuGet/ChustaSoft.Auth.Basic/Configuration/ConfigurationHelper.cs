@@ -1,9 +1,9 @@
-﻿using ChustaSoft.Tools.Authorization.Handlers;
+﻿using ChustaSoft.Auth.Basic.Handlers;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
-namespace ChustaSoft.Tools.Authorization.Configuration;
+namespace ChustaSoft.Auth.Basic.Configuration;
 
 
 public static class ConfigurationHelper
