@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. NuGet", "1. NuGet", "{417789D4-9372-4C85-B9DF-68B2AAC2F2D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Tests", "3. Tests", "{079D0357-D2C4-4FF5-969D-CDA567A4170C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Examples", "4. Examples", "{1B02D724-E788-4821-9E5B-A16658888912}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChustaSoft.Auth.Basic", "NuGet\ChustaSoft.Auth.Basic\ChustaSoft.Auth.Basic.csproj", "{97CBC58B-25C6-421D-8E71-F5FC5C5BDD66}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic", "Basic", "{FEFE06CE-40AE-4CF7-B71E-C72B06D2EF50}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChustaSoft.Auth.Basic.Sample.WebAPI", "Examples\Basic\ChustaSoft.Auth.Basic.Sample.WebAPI.csproj", "{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Documentation", "5. Documentation", "{F7119101-169A-4C37-ADCA-7BF6AE16A3CF}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97CBC58B-25C6-421D-8E71-F5FC5C5BDD66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97CBC58B-25C6-421D-8E71-F5FC5C5BDD66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97CBC58B-25C6-421D-8E71-F5FC5C5BDD66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97CBC58B-25C6-421D-8E71-F5FC5C5BDD66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97CBC58B-25C6-421D-8E71-F5FC5C5BDD66} = {417789D4-9372-4C85-B9DF-68B2AAC2F2D5}
+		{FEFE06CE-40AE-4CF7-B71E-C72B06D2EF50} = {1B02D724-E788-4821-9E5B-A16658888912}
+		{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E} = {FEFE06CE-40AE-4CF7-B71E-C72B06D2EF50}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5056E0F-5434-434A-8A4E-A5214A704B64}
+	EndGlobalSection
+EndGlobal

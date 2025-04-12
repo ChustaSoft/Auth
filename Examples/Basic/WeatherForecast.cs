@@ -1,4 +1,4 @@
-namespace ChustaSoft.Tools.Authorization.Basic.WebAPI
+namespace ChustaSoft.Auth.Basic.Sample.WebAPI
 {
     public class WeatherForecast
     {

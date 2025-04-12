@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ChustaSoft.Tools.Authorization.Basic.WebAPI.Controllers
+namespace ChustaSoft.Auth.Basic.Sample.WebAPI.Controllers
 {
     [Authorize]
     [ApiController]
