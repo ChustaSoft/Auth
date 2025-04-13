@@ -10,7 +10,7 @@ using System.Text;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 
-namespace ChustaSoft.Auth.Basic.Handlers;
+namespace ChustaSoft.Auth.Basic;
 
 
 public class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSchemeOptions>
