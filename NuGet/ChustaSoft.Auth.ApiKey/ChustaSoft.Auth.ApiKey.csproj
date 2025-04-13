@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+		<Nullable>enable</Nullable>
+		<Version>1.0.0-beta.1</Version>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<FileVersion>1.0.0</FileVersion>
+		<Description>NuGet solution for ApiKey Auth scenarios</Description>
+		<Copyright>ChustaSoft</Copyright>
+		<PackageLicenseUrl>https://github.com/ChustaSoft/Auth/blob/main/LICENSE</PackageLicenseUrl>
+		<PackageProjectUrl>https://github.com/ChustaSoft/Auth</PackageProjectUrl>
+		<PackageReleaseNotes>https://github.com/ChustaSoft/Auth/blob/main/NuGet/ChustaSoft.Auth.ApiKey/changelog.md</PackageReleaseNotes>
+		<RepositoryType>GIT</RepositoryType>
+		<RepositoryUrl>https://github.com/ChustaSoft/Auth.git</RepositoryUrl>
+		<PackageTags>Auth;Authentication;Authorization;DotNetCore;DotNet;ASPNET;ASPMVC;ApiKey;Security</PackageTags>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+</Project>

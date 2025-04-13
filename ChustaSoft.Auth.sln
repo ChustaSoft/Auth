@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Others", "5. Others", "{
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChustaSoft.Auth.ApiKey", "NuGet\ChustaSoft.Auth.ApiKey\ChustaSoft.Auth.ApiKey.csproj", "{D5725CB6-B046-44D8-8D1A-F8DB87C1E900}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5725CB6-B046-44D8-8D1A-F8DB87C1E900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5725CB6-B046-44D8-8D1A-F8DB87C1E900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5725CB6-B046-44D8-8D1A-F8DB87C1E900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5725CB6-B046-44D8-8D1A-F8DB87C1E900}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +53,7 @@ Global
 		{97CBC58B-25C6-421D-8E71-F5FC5C5BDD66} = {417789D4-9372-4C85-B9DF-68B2AAC2F2D5}
 		{FEFE06CE-40AE-4CF7-B71E-C72B06D2EF50} = {1B02D724-E788-4821-9E5B-A16658888912}
 		{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E} = {FEFE06CE-40AE-4CF7-B71E-C72B06D2EF50}
+		{D5725CB6-B046-44D8-8D1A-F8DB87C1E900} = {417789D4-9372-4C85-B9DF-68B2AAC2F2D5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C5056E0F-5434-434A-8A4E-A5214A704B64}
