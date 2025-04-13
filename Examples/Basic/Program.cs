@@ -1,4 +1,4 @@
-using ChustaSoft.Auth.Basic.Configuration;
+using ChustaSoft.Auth.Basic;
 
 var builder = WebApplication.CreateBuilder(args);
 

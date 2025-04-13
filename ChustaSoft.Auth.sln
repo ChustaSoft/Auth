@@ -11,11 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Examples", "4. Examples"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChustaSoft.Auth.Basic", "NuGet\ChustaSoft.Auth.Basic\ChustaSoft.Auth.Basic.csproj", "{97CBC58B-25C6-421D-8E71-F5FC5C5BDD66}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic", "Basic", "{FEFE06CE-40AE-4CF7-B71E-C72B06D2EF50}"
-	ProjectSection(SolutionItems) = preProject
-		Basic.Sample.http = Basic.Sample.http
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChustaSoft.Auth.Basic.Sample.WebAPI", "Examples\Basic\ChustaSoft.Auth.Basic.Sample.WebAPI.csproj", "{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Others", "5. Others", "{F7119101-169A-4C37-ADCA-7BF6AE16A3CF}"
@@ -26,6 +21,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Others", "5. Others", "{
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChustaSoft.Auth.ApiKey", "NuGet\ChustaSoft.Auth.ApiKey\ChustaSoft.Auth.ApiKey.csproj", "{D5725CB6-B046-44D8-8D1A-F8DB87C1E900}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiKey", "ApiKey", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChustaSoft.Auth.ApiKey.Sample.WebAPI", "Examples\ApiKey\ChustaSoft.Auth.ApiKey.Sample.WebAPI.csproj", "{846D17AC-07A2-41F0-8AB4-3E7118CC10F5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,15 +44,19 @@ Global
 		{D5725CB6-B046-44D8-8D1A-F8DB87C1E900}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5725CB6-B046-44D8-8D1A-F8DB87C1E900}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5725CB6-B046-44D8-8D1A-F8DB87C1E900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{846D17AC-07A2-41F0-8AB4-3E7118CC10F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{846D17AC-07A2-41F0-8AB4-3E7118CC10F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{846D17AC-07A2-41F0-8AB4-3E7118CC10F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{846D17AC-07A2-41F0-8AB4-3E7118CC10F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{97CBC58B-25C6-421D-8E71-F5FC5C5BDD66} = {417789D4-9372-4C85-B9DF-68B2AAC2F2D5}
-		{FEFE06CE-40AE-4CF7-B71E-C72B06D2EF50} = {1B02D724-E788-4821-9E5B-A16658888912}
-		{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E} = {FEFE06CE-40AE-4CF7-B71E-C72B06D2EF50}
+		{77AD5715-93AF-4061-AF0B-85BEAC4CDA2E} = {1B02D724-E788-4821-9E5B-A16658888912}
 		{D5725CB6-B046-44D8-8D1A-F8DB87C1E900} = {417789D4-9372-4C85-B9DF-68B2AAC2F2D5}
+		{846D17AC-07A2-41F0-8AB4-3E7118CC10F5} = {1B02D724-E788-4821-9E5B-A16658888912}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C5056E0F-5434-434A-8A4E-A5214A704B64}

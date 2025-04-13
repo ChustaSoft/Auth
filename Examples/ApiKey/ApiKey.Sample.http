@@ -1,0 +1,7 @@
+@ChustaSoft.Auth.ApiKey.Sample.WebAPI_HostAddress = http://localhost:5064
+
+GET {{ChustaSoft.Auth.ApiKey.Sample.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+X-ApiKey: Test_ApiKey
+
+###
