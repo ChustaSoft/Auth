@@ -8,6 +8,7 @@
 		<FileVersion>1.0.0</FileVersion>
 		<Description>NuGet solution for ApiKey Auth scenarios</Description>
 		<Copyright>ChustaSoft</Copyright>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageLicenseUrl>https://github.com/ChustaSoft/Auth/blob/main/LICENSE</PackageLicenseUrl>
 		<PackageProjectUrl>https://github.com/ChustaSoft/Auth</PackageProjectUrl>
 		<PackageReleaseNotes>https://github.com/ChustaSoft/Auth/blob/main/NuGet/ChustaSoft.Auth.ApiKey/changelog.md</PackageReleaseNotes>
@@ -18,6 +19,10 @@
 
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
 </Project>
