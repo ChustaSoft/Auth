@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
 		<Nullable>enable</Nullable>
-		<Version>1.0.0.beta.1</Version>
+		<Version>1.0.0-beta.1</Version>
 		<AssemblyVersion>1.0.0</AssemblyVersion>
 		<FileVersion>1.0.0</FileVersion>
 		<Description>NuGet solution for Basic Auth scenarios</Description>
