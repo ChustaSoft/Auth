@@ -15,8 +15,8 @@ The recommended way to handle it is through the built in AuthenticationHandler. 
 This will allow the project to configure them isolated from the auth library, and the library is just expecting a function for that in order to validate the token against.
 
 ```csharp
-	builder.Services.ConfigureBasicAuthentication((username, password) 
-		=> { return username == "test" && password == "pass"; });
+	builder.Services.ConfigureApiKeyAuthentication((token) 
+		=> { return token == "Test_ApiKey"; });
 ```
 
 This provider can be implemented in multiple ways, including another service as long as it complies with the signature of the function.

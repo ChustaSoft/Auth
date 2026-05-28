@@ -14,6 +14,16 @@ using System.Threading.Tasks;
 namespace ChustaSoft.Auth.ApiKey;
 
 
+/// <summary>
+/// Authenticates requests by validating an API key supplied in the X-ApiKey request header and, on success, produces an
+/// AuthenticationTicket for the configured authentication scheme.
+/// </summary>
+/// <remarks>Derived from AuthenticationHandler<AuthenticationSchemeOptions>. Validation is delegated to a
+/// provided Func<string,bool>. If the endpoint has IAllowAnonymous metadata, authentication is skipped (NoResult).
+/// Missing header, invalid key, or exceptions during validation result in AuthenticateResult.Fail. On success a
+/// ClaimsPrincipal containing a ClaimTypes.Name claim with value "Valid API" is created and returned in an
+/// AuthenticationTicket. Register this handler in the authentication pipeline and supply a key-validation
+/// delegate.</remarks>
 public class ApiKeyAuthenticationHandler : AuthenticationHandler<AuthenticationSchemeOptions>
 {
 
