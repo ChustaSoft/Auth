@@ -13,6 +13,14 @@ using System.Threading.Tasks;
 namespace ChustaSoft.Auth.Basic;
 
 
+/// <summary>
+/// Handles HTTP Basic authentication by validating the Authorization header, decoding base64 username:password
+/// credentials, invoking a credentials provider, and producing an authenticated ClaimsPrincipal when valid.
+/// </summary>
+/// <remarks>Skips authentication for endpoints with IAllowAnonymous metadata. Expects an Authorization header
+/// with the Basic scheme and base64-encoded credentials separated by ':'. Uses the provided Func<string,string,bool> to
+/// validate credentials and fails when header parsing or validation fails. On success, issues a ClaimsIdentity
+/// containing ClaimTypes.Name and an AuthenticationTicket for the configured scheme.</remarks>
 public class BasicAuthenticationHandler : AuthenticationHandler<AuthenticationSchemeOptions>
 {
 

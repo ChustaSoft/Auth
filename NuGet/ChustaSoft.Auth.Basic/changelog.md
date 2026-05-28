@@ -9,4 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.0.0] - XXXX-XX-XX
 ### Added
-- [TBD]
+- Added AuthenticationHandler mechanism for Basic Auth via lambda function as provider
+
+## [1.1.0] - XXXX-XX-XX
+### Added
+- Added generic ConfigureBasicAuthentication method with ICredentialsProvider support
