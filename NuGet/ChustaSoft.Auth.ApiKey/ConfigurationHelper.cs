@@ -9,7 +9,7 @@ public static class ConfigurationHelper
 {
     /// <summary>
     /// Adds API key authentication and authorization to the specified service collection using the provided token
-    /// validator and authentication scheme name.   
+    /// validator and authentication scheme name.
     /// </summary>
     /// <remarks>Registers the provided token validator as a transient Func<string,bool> and adds
     /// ApiKeyAuthenticationHandler under the specified scheme.</remarks>
@@ -47,8 +47,6 @@ public static class ConfigurationHelper
 
         services.AddAuthentication(schemaName)
             .AddScheme<AuthenticationSchemeOptions, ApiKeyAuthenticationHandler>(schemaName, null);
-
-        services.AddAuthorization();
     }
 
 }
