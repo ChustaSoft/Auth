@@ -44,7 +44,5 @@ public static class ConfigurationHelper
 
         services.AddAuthentication(schemaName)
             .AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>(schemaName, null);
-
-        services.AddAuthorization();
     }
 }

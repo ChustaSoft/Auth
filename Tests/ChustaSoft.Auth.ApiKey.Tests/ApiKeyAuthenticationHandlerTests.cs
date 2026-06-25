@@ -1,15 +1,11 @@
-﻿using System.Net;
-using System.Net.Http;
-using System.Security.Claims;
-using System.Text.Encodings.Web;
-using System.Threading;
-using ChustaSoft.Auth.ApiKey;
+﻿using ChustaSoft.Auth.ApiKey;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using NSubstitute;
-using Xunit;
+using System.Security.Claims;
+using System.Text.Encodings.Web;
 
 public class ApiKeyAuthenticationHandlerTests
 {

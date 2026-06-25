@@ -11,6 +11,8 @@ builder.Services.AddControllers();
 // Option 2: Using the extension method with a custom credentials provider class that implements the ICredentialsProvider interface
 builder.Services.ConfigureBasicAuthentication<InternalCredentialsProvider>();
 
+builder.Services.AddAuthorization();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

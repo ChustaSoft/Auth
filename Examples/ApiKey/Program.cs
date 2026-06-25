@@ -8,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Option 2: Using the extension method with a custom token provider class that implements the ITokenProvider interface
 builder.Services.ConfigureApiKeyAuthentication<InternalTokenProvider>();
 
+builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
 app.UseHttpsRedirection();
