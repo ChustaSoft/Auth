@@ -22,8 +22,6 @@ public static class ConfigurationHelper
 
         services.AddAuthentication(schemaName)
             .AddScheme<AuthenticationSchemeOptions, ApiKeyAuthenticationHandler>(schemaName, null);
-
-        services.AddAuthorization();
     }
 
 

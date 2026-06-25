@@ -19,6 +19,8 @@ This will allow the project to configure them isolated from the auth library, an
 ```csharp
 	builder.Services.ConfigureBasicAuthentication((username, password) 
 		=> { return username == "test" && password == "pass"; });
+
+    builder.Services.AddAuthorization();
 ```
 
 #### Option B: Using a separate class
@@ -35,6 +37,8 @@ public class InternalCredentialsProvider : ICredentialsProvider
 
 // In the configuration
 builder.Services.ConfigureBasicAuthentication<InternalCredentialsProvider>();
+
+builder.Services.AddAuthorization();
 ```
 
 This provider can be implemented in multiple ways, including another service as long as it complies with the signature of the function.

@@ -21,6 +21,7 @@ This will allow the project to configure them isolated from the auth library, an
 		=> { return token == "Test_ApiKey"; });
 
 
+    builder.Services.AddAuthorization();
 ```
 
 
@@ -37,6 +38,8 @@ public class InternalTokenProvider : ITokenProvider
 
 // In the configuration
 builder.Services.ConfigureApiKeyAuthentication<InternalTokenProvider>();
+
+builder.Services.AddAuthorization();
 ```
 
 This provider can be implemented in multiple ways, for example with a custom provider inyecting a IOptionsMonitor to get the valid tokens from configuration, or even with a provider that gets the valid tokens from a database or an external service.

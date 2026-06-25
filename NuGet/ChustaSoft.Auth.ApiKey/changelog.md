@@ -12,3 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added AuthenticationHandler mechanism for ApiKey Auth via lambda function as provider
 - Added generic ConfigureApiKeyAuthentication method with ITokenProvider support
 - .NET10 support
+
+## [1.0.1] - 2026-06-25
+### Changed
+- _AddAuthorization()_ changed, delegated to client application
