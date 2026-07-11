@@ -20,6 +20,8 @@ public static class ConfigurationHelper
     {
         services.AddTransient<Func<string, bool>>(x => apiKeyTokenProvider);
 
+        var test = services.AddAuthentication(schemaName);
+
         services.AddAuthentication(schemaName)
             .AddScheme<AuthenticationSchemeOptions, ApiKeyAuthenticationHandler>(schemaName, null);
     }
@@ -47,4 +49,20 @@ public static class ConfigurationHelper
             .AddScheme<AuthenticationSchemeOptions, ApiKeyAuthenticationHandler>(schemaName, null);
     }
 
+    /// <summary>
+    /// Adds API key authentication to the specified AuthenticationBuilder using the provided token provider type and authentication scheme name.
+    /// </summary>
+    /// <typeparam name="TProvider"></typeparam>
+    /// <param name="authenticationBuilder"></param>
+    /// <param name="schemaName"></param>
+    public static void AddApiKeyAuthenticationScheme<TProvider>(this AuthenticationBuilder authenticationBuilder, string schemaName = "ApiKeyAuthentication")
+        where TProvider : class, ITokenProvider
+    {
+        authenticationBuilder.Services.AddTransient<ITokenProvider, TProvider>();
+        authenticationBuilder.Services.AddTransient<Func<string, bool>>(x => x.GetRequiredService<ITokenProvider>().Validate);
+
+        authenticationBuilder.AddScheme<AuthenticationSchemeOptions, ApiKeyAuthenticationHandler>(schemaName, null);
+    }
+
 }
+
