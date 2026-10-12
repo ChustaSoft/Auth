@@ -20,8 +20,6 @@ public static class ConfigurationHelper
     {
         services.AddTransient<Func<string, bool>>(x => apiKeyTokenProvider);
 
-        var test = services.AddAuthentication(schemaName);
-
         services.AddAuthentication(schemaName)
             .AddScheme<AuthenticationSchemeOptions, ApiKeyAuthenticationHandler>(schemaName, null);
     }
